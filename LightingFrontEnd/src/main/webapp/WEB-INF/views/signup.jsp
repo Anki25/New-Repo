@@ -4,9 +4,12 @@
 
 
 <a href="${flowExecutionUrl}&_eventId_home">Home</a>
+
 <form:form commandName="us" id="signup">
+
   <h3 style="color:#3CB371;font-weight:bold;">Sign Up</h3><br/>
   <p>ALREADY REGISTERED? <a href= "signin">SIGN IN</a></p>
+  
 <table>
 <tr style="padding: 20px"><td>
 Name</td><td><form:input type="text" path="name" /></td></tr>

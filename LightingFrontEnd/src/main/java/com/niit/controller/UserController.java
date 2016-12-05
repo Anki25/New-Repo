@@ -68,10 +68,14 @@ public class UserController {
 	*/
 	
 	@RequestMapping("/signin")
-	public ModelAndView SignInPage() {
+	public ModelAndView SignInPage(@RequestParam(value = "error",required = false) String error) {
 		System.out.println("In SignIn page");
+		ModelAndView mv = new ModelAndView();
+		if (error != null) {
+			mv.addObject("error", "Invalid username and password!");
+		}
 
-		return new ModelAndView("signin");
+		return mv;
 
 	}
 
@@ -121,7 +125,7 @@ public class UserController {
 */	
 	
 	@RequestMapping(value="/login_session_attributes")
-	public String login_session_attributes(HttpSession session,Model model){
+	public ModelAndView login_session_attributes(HttpSession session,Model model){
 		String name=SecurityContextHolder.getContext().getAuthentication().getName();
 		System.out.println("inside security check");
 		
@@ -129,6 +133,7 @@ public class UserController {
 		System.out.println(name);
 		
 		user=userDAO.get(name);
+					
 		session.setAttribute("loggedInUser", user.getName());
     	session.setAttribute("loggedInUserID", user.getUserID());
     	
@@ -145,14 +150,14 @@ public class UserController {
 				System.out.println(role);
 				model.addAttribute("productList", productDAO.list());
 			//session.setAttribute("cartSize", cartItemDAO.cartsize());
-				return "productsuser";
+				return new ModelAndView("productsuser");
 			}
 			else
 			{
 				session.setAttribute("isAdmin", "true");
 			}
 			}
-		return "adminhome" ;
+		return new ModelAndView("adminhome") ;
 		
 		
 	}

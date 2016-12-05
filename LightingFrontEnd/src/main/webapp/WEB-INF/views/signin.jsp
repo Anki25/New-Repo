@@ -6,8 +6,11 @@
          
            <h3 style="color:#3CB371;font-weight:bold;">Sign In</h3>
                   
-          <p style="color:red; text-align:center">
-          ${errorMessage}
+          <p >
+          <c:if test="${not empty error}">
+			<div class="error" style="color:red; text-align:center">${error}</div>
+		</c:if>
+		</p>
                  
          <input type="text" name="username" placeholder="ENTER YOUR USERID" required><BR><BR><BR>
          <input type="password" name="password" placeholder="ENTER YOUR PASSWORD"><BR><BR><BR>

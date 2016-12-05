@@ -31,7 +31,7 @@
 login-page="/signin"
 default-target-url="/"
 login-processing-url="/perform_login"
-authentication-failure-url="/signin" 
+authentication-failure-url="/signin?error" 
 authentication-success-forward-url="/login_session_attributes" />
 
 <logout logout-url= "/perform_logout"
