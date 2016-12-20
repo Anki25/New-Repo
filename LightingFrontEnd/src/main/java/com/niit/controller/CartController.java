@@ -3,6 +3,8 @@ package com.niit.controller;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -45,6 +47,11 @@ public class CartController {
 	
 	@Autowired
 	HttpSession httpSession;
+	
+
+	@Autowired
+	private JavaMailSender mailSender;
+	
 	
 /*@RequestMapping("/addtocart")
 public ModelAndView addToCart(@RequestParam("pro_Id")String id,@RequestParam("userid")String uid,Cart c,Product p,User u,Model model) {
@@ -118,6 +125,7 @@ public ModelAndView addToCart(@RequestParam("pro_Id")String id,@RequestParam("us
 	public ModelAndView buyproductPage(@PathVariable("id") String id, @PathVariable("pid") String pid,
 			@RequestParam("quantity") int quantity, HttpSession session) throws Exception {
 
+		user=userDAO.get(id);
 	ModelAndView mv = new ModelAndView("addtocart");
 	//int k = Integer.parseInt(quantity);
 	int y = 0;
@@ -143,6 +151,27 @@ public ModelAndView addToCart(@RequestParam("pro_Id")String id,@RequestParam("us
 		cartDAO.save(cart);
 	}
 	mv.addObject("cartList", cartDAO.list(id));
+	mv.addObject("cartprice", cartDAO.totalprice(cart.getUserID()));
+	
+	String recipientAddress = /*request.getParameter("recipient");*/user.getEmailid();
+	String subject = /*request.getParameter("subject");*/"Order Confirmed!";
+	String message = /*request.getParameter("message");*/ "Your Order is confirmed.\n"+"The Details are: "+"Id: "+user.getUserID()+"\n User Name: "+user.getEmailid();
+	
+	// prints debug info
+	System.out.println("To: " + recipientAddress);
+	System.out.println("Subject: " + subject);
+	System.out.println("Message: " + message);
+	
+	// creates a simple e-mail object
+	SimpleMailMessage email = new SimpleMailMessage();
+	email.setTo(recipientAddress);
+	email.setSubject(subject);
+	email.setText(message);
+	
+	// sends the e-mail
+	mailSender.send(email);
+	
+	
 	return mv;
 }
 	
@@ -151,11 +180,11 @@ public ModelAndView addToCart(@RequestParam("pro_Id")String id,@RequestParam("us
 	
 	@RequestMapping(value = "/cartupdate{id}")
 	public ModelAndView UpdatecatPage(@PathVariable("id") String id) {
-		ModelAndView mv = new ModelAndView("mycart");
+		ModelAndView mv = new ModelAndView("addtocart");
 		cart = cartDAO.getById(id);
 		mv.addObject("editcartid", cart.getCartId());
 		mv.addObject("mycartList", cartDAO.mycartproducts(cart.getUserID()));
-		mv.addObject("cartprice", cartDAO.totalproducts(cart.getUserID()));
+		mv.addObject("cartprice", cartDAO.totalprice(cart.getUserID()));
 		return mv;
 	}
 	
@@ -163,7 +192,7 @@ public ModelAndView addToCart(@RequestParam("pro_Id")String id,@RequestParam("us
 	@RequestMapping(value = "/updatecartquan{id}", method = RequestMethod.POST)
 	public ModelAndView Updatecart(@PathVariable("id") String id, @RequestParam("quantity") String quantity) {
 		int k = Integer.parseInt(quantity);
-		ModelAndView mv = new ModelAndView("mycart");
+		ModelAndView mv = new ModelAndView("addtocart");
 		cart = cartDAO.getById(id);
 		cart.setQuantity(k);
 		cart.setPrice(cart.getQuantity() * cart.getProduct().getPrice());
@@ -183,7 +212,7 @@ public ModelAndView addToCart(@RequestParam("pro_Id")String id,@RequestParam("us
 @RequestMapping("/viewcart")
 public ModelAndView viewCart(@RequestParam("userid")String uid,Model model) {
 	System.out.println("viewing cart");
-	
+	model.addAttribute("cartprice", cartDAO.totalprice(cart.getUserID()));
 	model.addAttribute("cartList", cartDAO.list(uid));
 	return new ModelAndView("addtocart");
 }

@@ -51,6 +51,7 @@ Spring MVC will detect and enable the validation support automatically. -->
 		flow-builder-services="flowBuilderServices" base-path="/WEB-INF">
 		<!-- here the id is mapped to invoke this flow -->
 		<webflow:flow-location id="memberShip" path="/memberShipFlow.xml" />
+		<webflow:flow-location id="checkOut" path="/checkOutFlow.xml" />
 	</webflow:flow-registry>
 	
 	

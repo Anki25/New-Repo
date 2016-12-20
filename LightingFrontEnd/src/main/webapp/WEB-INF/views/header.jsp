@@ -261,9 +261,9 @@ input#button:after {
        </ul>
        </li>
        <li><c:if test="${not empty cartSize}">
- R      <a href="viewcart${loggedInUserID}"><span class="glyphicon glyphicon-shopping-cart">Cart</span></a>(${cartSize})</c:if></li>
+     <a href="viewcart?userid=${loggedInUserID}"><span class="glyphicon glyphicon-shopping-cart">Cart</span></a><span class="badge">10(${cartSize})</span></c:if></li>
        <li><c:if test="${empty cartSize}">
-       <a href="viewcart${loggedInUserID}"><span class="glyphicon glyphicon-shopping-cart">Cart</span></a></c:if></li></c:when>
+       <a href="viewcart?userid=${loggedInUserID}"><span class="glyphicon glyphicon-shopping-cart">Cart</span></a></c:if></li></c:when>
        </c:choose>
      
     </ul>   

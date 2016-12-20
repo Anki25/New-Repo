@@ -7,7 +7,7 @@ ${signinmsg}
 </p><br>
 
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-12">
 <div id="myCarousel" class="carousel slide">
 <ol class="carousel-indicators">
  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -78,6 +78,7 @@ ${signinmsg}
       <img src="resources/images/lanterns.jpg" class="img-circle" style="width:350px;height:300px">
     </a>
   </div>
+  
   <div class="col-md-4" align="center">
     <a href="images" class="thumbnail">
       <p>Festive Lights</p>
@@ -85,11 +86,14 @@ ${signinmsg}
     </a>
   </div>
   
+<div class="col-md-4" align="center">
+<a href="images" class="thumbnail">
+<p>Street Lights & High Masts</p>
+<img src="resources/images/high mast.jpg" class="img-circle" style="width:350px;height:300px">
+</a>
 </div>
 </div>
-<div class="col-md-4">
-<img src="resources/images/SALE1.jpg" style="width:350px;height:300px">
-</div>
-<a href="another">new</a>
+ 
+ <a href="ankita">Hello</a>
  
 <%@ include file="footer.jsp" %> 

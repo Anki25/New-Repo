@@ -15,7 +15,8 @@
 				</tr>
 			</c:forEach>
 		</table>
-		<a href="checkout" id="buttons" style="float:right;">Checkout</a>
+		<p>Total price: ${cartprice}</p>
+		<a href="checkOut.obj" id="buttons" style="float:right;">Checkout</a>
 	</c:if>
 
 <c:if test="${empty cartList}">
@@ -25,5 +26,7 @@
 <h2>Your Shopping Cart seems empty!</h2><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 </c:if>
+
+<br/><br/><br/><br/><br/>
 
 <%@ include file="footer.jsp" %>
