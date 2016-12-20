@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="com.niit.lightingbackend.TestCaseCategory" time="48.694" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_77\jre\bin"/>
+    <property name="java.vm.version" value="25.77-b03"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="F:\Separate\LightingBackEnd"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="F:\Separate\LightingBackEnd"/>
+    <property name="java.runtime.version" value="1.8.0_77-b03"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_77\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="F:\niit\apache-maven-3.3.9\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_77\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_77\bin.;F:\niit\apache-maven-3.3.9\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\Admin"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Admin"/>
+    <property name="java.class.path" value="F:\niit\apache-maven-3.3.9\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_77\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean compile install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_77"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_77\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_77\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_77\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_77\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_77\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_77\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_77\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_77\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_77\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="F:\niit\apache-maven-3.3.9\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.niit.lightingbackend.TestCaseCategory" name="categoryAddTestcase" time="48.694">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.niit.lightingbackend.TestCaseCategory.categoryAddTestcase(TestCaseCategory.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>Hibernate: drop table Category if exists
+Hibernate: drop table Product if exists
+Hibernate: drop table sup_pro if exists
+Hibernate: drop table supplier if exists
+Hibernate: drop table User if exists
+Hibernate: create table Category (cat_id varchar(255) not null, cat_name varchar(255), description varchar(255), primary key (cat_id))
+Hibernate: create table Product (pro_Id varchar(255) not null, cat_Id integer not null, comp_name varchar(255) not null, description varchar(255) not null, price float not null, pro_name varchar(255) not null, quantity integer not null check (quantity&gt;=0), sup_id integer not null, primary key (pro_Id))
+Hibernate: create table sup_pro (sup_id varchar(255) not null)
+Hibernate: create table supplier (sup_id varchar(255) not null, address varchar(255), sup_name varchar(255), primary key (sup_id))
+Hibernate: create table User (userID varchar(255) not null, address varchar(255) not null, dob timestamp, emailid varchar(255) not null, firstname varchar(255) not null, gender varchar(255), lastname varchar(255), mobileno varchar(255) not null, password varchar(255) not null, role varchar(255) not null, primary key (userID))
+Hibernate: alter table Product add constraint FKp5i0m0c074yh5t2ntm4iw5fmm foreign key (cat_Id) references Category
+Hibernate: alter table sup_pro add constraint FK4dgay314duddkgpliu2wbuujl foreign key (sup_Id) references supplier
+</system-out>
+    <system-err>Sep 09, 2016 10:23:22 AM org.springframework.context.annotation.AnnotationConfigApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3930015a: startup date [Fri Sep 09 10:23:22 IST 2016]; root of context hierarchy
+Sep 09, 2016 10:23:23 AM org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean &apos;categoryDAO&apos; with a different definition: replacing [Generic bean: class [com.niit.dao.CategoryDAOImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [F:\Separate\LightingBackEnd\target\classes\com\niit\dao\CategoryDAOImpl.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=applicationContextConfig; factoryMethodName=getCategoryDAO; initMethodName=null; destroyMethodName=(inferred); defined in com.niit.config.ApplicationContextConfig]
+Sep 09, 2016 10:23:23 AM org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean &apos;supplierDAO&apos; with a different definition: replacing [Generic bean: class [com.niit.dao.SupplierDAOImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [F:\Separate\LightingBackEnd\target\classes\com\niit\dao\SupplierDAOImpl.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=applicationContextConfig; factoryMethodName=getSupplierDAO; initMethodName=null; destroyMethodName=(inferred); defined in com.niit.config.ApplicationContextConfig]
+Sep 09, 2016 10:23:23 AM org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean &apos;product&apos; with a different definition: replacing [Generic bean: class [com.niit.model.Product]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [F:\Separate\LightingBackEnd\target\classes\com\niit\model\Product.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=applicationContextConfig; factoryMethodName=getProduct; initMethodName=null; destroyMethodName=(inferred); defined in com.niit.config.ApplicationContextConfig]
+Sep 09, 2016 10:23:23 AM org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean &apos;UserDAO&apos; with a different definition: replacing [Generic bean: class [com.niit.dao.UserDAOImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [F:\Separate\LightingBackEnd\target\classes\com\niit\dao\UserDAOImpl.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=applicationContextConfig; factoryMethodName=getUserDAO; initMethodName=null; destroyMethodName=(inferred); defined in com.niit.config.ApplicationContextConfig]
+Sep 09, 2016 10:23:23 AM org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor &lt;init&gt;
+INFO: JSR-330 &apos;javax.inject.Inject&apos; annotation found and supported for autowiring
+Sep 09, 2016 10:23:24 AM org.springframework.jdbc.datasource.DriverManagerDataSource setDriverClassName
+INFO: Loaded JDBC driver: org.h2.Driver
+Sep 09, 2016 10:23:32 AM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.2.1.Final}
+Sep 09, 2016 10:23:32 AM org.hibernate.cfg.Environment &lt;clinit&gt;
+INFO: HHH000206: hibernate.properties not found
+Sep 09, 2016 10:23:32 AM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+Sep 09, 2016 10:23:35 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager &lt;clinit&gt;
+INFO: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+Sep 09, 2016 10:24:02 AM org.hibernate.dialect.Dialect &lt;init&gt;
+INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Sep 09, 2016 10:24:05 AM org.hibernate.validator.internal.util.Version &lt;clinit&gt;
+INFO: HV000001: Hibernate Validator 5.2.4.Final
+Sep 09, 2016 10:24:09 AM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+INFO: HHH000476: Executing import script &apos;org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4fcc0416&apos;
+SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Sep 09, 2016 10:24:10 AM org.springframework.orm.hibernate5.HibernateTransactionManager afterPropertiesSet
+INFO: Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@fa4c865] of Hibernate SessionFactory for HibernateTransactionManager
+</system-err>
+  </testcase>
+</testsuite>
